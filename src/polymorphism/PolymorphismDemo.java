@@ -18,7 +18,7 @@ package polymorphism;
  */
 
 
-public class PolymorphismDemo {
+public class PolymorphismDemo {  //compile time polymorphism , static binding
 
     public int add(int a,int b){
         return a+b;

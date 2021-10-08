@@ -3,7 +3,7 @@ package polymorphism;
 /**
  * Method overriding ->  if two classes have same method with same signature
  *
- * advantage => it allow you to impleme
+ * advantage => it allows you to implement method which is already implemented by  parent class
  */
 public class Animal {  //run  time polymorphism ,dynamic binding
 

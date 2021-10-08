@@ -1,6 +1,6 @@
 package abstraction.interfacedemo;
 
-public interface Sport extends Sport1 {
+public interface Sport  {
 
     public abstract void play();//declare
 }

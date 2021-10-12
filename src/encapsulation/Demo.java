@@ -6,6 +6,5 @@ public class Demo {
 
         EncapsulationDemo obj = new EncapsulationDemo();
         obj.setId(0);
-
     }
 }

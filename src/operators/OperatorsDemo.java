@@ -33,7 +33,7 @@ public class OperatorsDemo {
 
 
 
-        if(k==10  || j==3){
+        if(k!=10  || j==3){
             System.out.println("If executed");
         }else {
             System.out.println("else");

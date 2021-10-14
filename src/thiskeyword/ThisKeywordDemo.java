@@ -4,7 +4,7 @@ import operators.OperatorsDemo;
 
 /**
  * This =>  1. this keyword is used to refer current class instance variable
- *          2. this keyword is used to refer current class methods.
+ *          2. this keyword is used to invoke current class methods.
  *          3. this keyword is used to call constructor
  */
 public class ThisKeywordDemo {

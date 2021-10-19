@@ -12,7 +12,6 @@ public class SuperKeywordDemo {
         System.out.println("In display parent");
     }
     public SuperKeywordDemo(){
-
         System.out.println("In parent const");
     }
 

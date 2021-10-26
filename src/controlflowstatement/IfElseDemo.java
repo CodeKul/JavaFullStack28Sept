@@ -5,23 +5,23 @@ import java.util.Scanner;
 public class IfElseDemo {
 
     public static void main(String[] args) {
-        int age;
-        String nationality;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("ENter the age");
-        age = scanner.nextInt();
-        System.out.println("Enter nationality");
-        nationality = scanner.next();
-
-        if (age >= 18) {//simple/single level if else
-            if(nationality.equals("Indian")){
-                System.out.println("You can vote");
-            }else {
-                System.out.println("Not indian");
-            }
-        } else if (age <= 18) {
-            System.out.println("You can not vote");
-        }
+//        int age;
+//        String nationality;
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("ENter the age");
+//        age = scanner.nextInt();
+//        System.out.println("Enter nationality");
+//        nationality = scanner.next();
+//
+//        if (age >= 18) {//simple/single level if else
+//            if(nationality.equals("Indian")){
+//                System.out.println("You can vote");
+//            }else {
+//                System.out.println("Not indian");
+//            }
+//        } else if (age <= 18) {
+//            System.out.println("You can not vote");
+//        }
 
 //        int a = 10, b = 20, c = 30;
 //
@@ -32,6 +32,16 @@ public class IfElseDemo {
 //        } else {
 //            System.out.println("c is greater");
 //        }
+
+        int num = 1;
+//        if(num>0){
+//            System.out.println("Number is positive");
+//        }else {
+//            System.out.println("Number is negative");
+//        }
+
+        String str  = num>0?"Number is positive":"Number is negative";
+        System.out.println(str);
 
 
     }

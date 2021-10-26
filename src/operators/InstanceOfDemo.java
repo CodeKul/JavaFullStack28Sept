@@ -6,7 +6,7 @@ interface MyInterface{
 
 }
 
-public class InstanceOfDemo {
+public class InstanceOfDemo implements MyInterface{
 
     public void  show(){
         System.out.println("In show");

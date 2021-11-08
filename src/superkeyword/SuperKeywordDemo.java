@@ -25,11 +25,12 @@ class A extends SuperKeywordDemo {
     int i = 90;
 
     public A(){
+
         System.out.println("In child const");
     }
 
     public A(int i){
-       super(2);
+        super(2);
         System.out.println("In child const parameter");
     }
 

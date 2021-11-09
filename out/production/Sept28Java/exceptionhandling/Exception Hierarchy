@@ -1,10 +1,10 @@
 Throwable
-        Exception -
+        Exception(checked exception) -
                   IOException
+                    -FileNotFoundException
                   SQLException
-                  FileNotFoundException
                   ClassNotFoundException
-                  RuntimeException -
+                  RuntimeException (unchecked exception)-
                                   - ArithmeticException
                                   - NullPointerException
                                   - NumberFormatException
@@ -12,7 +12,6 @@ Throwable
                                   - IndexOutOfBoundException-
                                              -ArrayIndexOutOfBoundException
                                              -StringIndexOutOfBoundException
-
         Error-
             VirtualError
             OutOfMemoryError

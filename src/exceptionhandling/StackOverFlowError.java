@@ -2,15 +2,15 @@ package exceptionhandling;
 
 public class StackOverFlowError {
     public static void main(String[] args) {
-        StackOverFlow(3);
+        recursion(5);
     }
 
-    public static void StackOverFlow(int i){
-        System.out.println("num=>"+i);
+    public static void recursion(int i){
+        System.out.println("i=>"+i);
         if(i==0){
             return;
         }else {
-            StackOverFlow(i);
+            recursion(i);
         }
     }
 }

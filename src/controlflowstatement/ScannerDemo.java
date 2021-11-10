@@ -12,6 +12,7 @@ public class ScannerDemo {
         age = scanner.nextInt();
 
         System.out.println("age is==>"+age);
+        scanner.close();
 
     }
 }

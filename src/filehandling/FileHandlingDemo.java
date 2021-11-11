@@ -9,7 +9,7 @@ public class FileHandlingDemo {
 
         FileOutputStream fileOutputStream = null;
         FileInputStream fileInputStream = null;
-
+//ByteStream
         try {
             fileOutputStream = new FileOutputStream(file);
             String str = "Welcome";
@@ -34,7 +34,7 @@ public class FileHandlingDemo {
                 System.out.print((char) i);
                 i = fileInputStream.read();
             }
-            fileInputStream.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

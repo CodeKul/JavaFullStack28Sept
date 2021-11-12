@@ -3,7 +3,7 @@ package filehandling;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
-public class BufferWriterDemo {
+public class BufferOutputDemo {
     public static void main(String[] args) {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream("BufferDemo.txt");

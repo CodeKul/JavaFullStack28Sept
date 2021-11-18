@@ -3,10 +3,9 @@ package multithreading;
 public class ProducerConsumer {
     int num;
 
-    boolean flag = true;
-
+    boolean flag  = true;
     public synchronized void set(int num) {
-        if (!flag) {
+        if(!flag){
             try {
                 wait();
             } catch (InterruptedException e) {
@@ -20,7 +19,7 @@ public class ProducerConsumer {
     }
 
     public synchronized void get() {
-        if (flag) {
+        if(flag){
             try {
                 wait();
             } catch (InterruptedException e) {
@@ -33,11 +32,12 @@ public class ProducerConsumer {
     }
 }
 
+
 class Producer implements Runnable {
 
     ProducerConsumer producerConsumer;
 
-    public Producer(ProducerConsumer producerConsumer) {
+    Producer(ProducerConsumer producerConsumer) {
         this.producerConsumer = producerConsumer;
         Thread t1 = new Thread(this);
         t1.start();
@@ -46,7 +46,6 @@ class Producer implements Runnable {
     @Override
     public void run() {
         int num = 0;
-
         while (true) {
             producerConsumer.set(num++);
             try {
@@ -59,17 +58,17 @@ class Producer implements Runnable {
 }
 
 class Consumer implements Runnable {
-
     ProducerConsumer producerConsumer;
 
-    public Consumer(ProducerConsumer producerConsumer) {
+    Consumer(ProducerConsumer producerConsumer) {
         this.producerConsumer = producerConsumer;
-        Thread t2 = new Thread(this);
-        t2.start();
+        Thread t1 = new Thread(this);
+        t1.start();
     }
 
     @Override
     public void run() {
+
         while (true) {
             producerConsumer.get();
             try {
@@ -81,11 +80,11 @@ class Consumer implements Runnable {
     }
 }
 
-class Main1 {
-
+class Main2 {
     public static void main(String[] args) {
         ProducerConsumer producerConsumer = new ProducerConsumer();
         Producer producer = new Producer(producerConsumer);
         Consumer consumer = new Consumer(producerConsumer);
     }
+
 }

@@ -3,7 +3,6 @@ package collection;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListDemo {
@@ -12,8 +11,12 @@ public class ArrayListDemo {
         dataField.setAccessible(true);
         return ((Object[]) dataField.get(l)).length;
     }
+
     public static void main(String[] args) throws Exception {
 
+        //arraylist maintain  insertion order
+//        arraylist stores  duplicate values
+//        arraylist uses dynamic array to store elements
         List<Integer> list = new ArrayList<>();
         list.add(10);
         list.add(30);
@@ -29,6 +32,7 @@ public class ArrayListDemo {
 //        System.out.println(list.contains(40));
 //        System.out.println(list.indexOf(40));
 //        System.out.println(list.set(3,50));
+
         System.out.println(list);
 
 //        list.forEach(s->{
@@ -41,7 +45,7 @@ public class ArrayListDemo {
 //        }
 //
 //
-//        List<Integer> list1 = Arrays.asList(12,2342,24,54,5,34534,5);
+        List<Integer> list1 = Arrays.asList(12,2342,24,54,5,34534,5);
 //
 //        List<Integer> list2 = new ArrayList<>(List.of(12,132,3,23,23,23,21));
 //

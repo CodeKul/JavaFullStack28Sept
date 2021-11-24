@@ -1,6 +1,8 @@
 package test27oct;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Employee {
     int id;
@@ -21,14 +23,14 @@ public class Employee {
         Employee obj3 = new Employee(3, "akash", "Mumbai", 44434434.00);
 
 
-        ArrayList<Employee> list = new ArrayList<>();
+        List<Employee> list = new LinkedList<Employee>();
         list.add(obj1);
         list.add(obj2);
         list.add(obj3);
 
-//        for (int i = 0; i < list.size(); i++) {
-//            System.out.println(list.get(i).id+" "+list.get(i).name);
-//        }
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i).id+" "+list.get(i).name);
+        }
 
         list.forEach(s->{
             System.out.println(s.id+" "+s.name);

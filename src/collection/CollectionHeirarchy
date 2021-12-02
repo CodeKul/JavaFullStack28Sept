@@ -8,3 +8,11 @@
           -LinkedList(C)                     Dequeue(I)                             - LinkedHashSet(C)
           -Vector(C)                           ArrayDequeue(C)
               -Stack
+
+
+
+              map(I)
+
+              abstractMap(a)
+
+              HashMap(C)

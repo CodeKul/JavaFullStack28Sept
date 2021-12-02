@@ -17,8 +17,7 @@ public class Student {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+
         Student student = (Student) o;
         return id == student.id && Objects.equals(name, student.name) && Objects.equals(address, student.address);
     }
@@ -31,8 +30,8 @@ public class Student {
     public static void main(String[] args) {
 
         Student obj1 = new Student(1,"rahul","pune");
-        Student obj2 = new Student(1,"rahul","pune");
-        Student obj3 = new Student(1,"rahul","pune");
+        Student obj2 = new Student(2,"rahul","pune");
+        Student obj3 = new Student(3,"rahul","pune");
 
         System.out.println(obj1.hashCode());
         System.out.println(obj1.hashCode());

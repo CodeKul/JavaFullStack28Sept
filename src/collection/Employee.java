@@ -26,7 +26,7 @@ public class Employee implements Comparable<Employee> {
         list.add(obj2);
         list.add(obj3);
 
-        Collections.sort(list);
+        Collections.sort(list,Collections.reverseOrder());
 
         list.forEach(s->{
             System.out.println(s);

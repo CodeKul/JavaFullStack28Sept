@@ -18,7 +18,5 @@ public class PredicateDemo {
         Stream<Integer>stream = list.stream().filter(predicate);
 
         stream.forEach(System.out::println);
-
-
     }
 }

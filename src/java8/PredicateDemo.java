@@ -12,8 +12,9 @@ public class PredicateDemo {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
         Predicate<Integer>predicate = p->p>5;
+        Predicate<Integer>predicate1 = p->p==5;
 
-        System.out.println(predicate.test(i));
+        System.out.println(predicate.and(predicate1).test(i)    );
 
         Stream<Integer>stream = list.stream().filter(predicate);
 
